@@ -44,7 +44,7 @@ def heatmapper_func(df, factors, sectors):
     mask = np.zeros((10, 6))
     mask[:,5] = True
     
-    sns.set_theme(rc={'figure.figsize':(16, 8)}, style="whitegrid")
+    sns.set_theme(rc={'figure.figsize':(16, 8)}, style="white")
     
     sns.heatmap(df, mask=mask, cbar=True, cmap="Spectral_r")
     plt.suptitle('Contribution of drivers, 1990-2019', y=0.95, x=0.4, size=24)
